@@ -14,13 +14,13 @@ const Navbar = ({ toggle }) => {
     <>
       <Nav>
         <NavbarContainer>
-          <NavLogo to='/'>Aşin Teknoloji</NavLogo>
+          <NavLogo to='home'>Aşin Teknoloji</NavLogo>
           <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
           <NavMenu>
             <NavItem>
-              <NavLinks to='/'>Anasayfa</NavLinks>
+              <NavLinks to='home'>Anasayfa</NavLinks>
             </NavItem>
             <NavItem>
               <NavLinks to='about'>Hakkımızda</NavLinks>

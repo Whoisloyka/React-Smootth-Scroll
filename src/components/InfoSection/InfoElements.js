@@ -18,17 +18,25 @@ export const InfoWrapper = styled.div`
   margin-left: auto;
   padding: 0 24px;
   justify-content: center;
+
+  @media screen and (min-width: 1700px) {
+    height: 1100px;
+  }
 `
 export const InfoRow = styled.div`
   display: grid;
-  grid-auto-columns: min-content(auto, 1fr);
+  gap: 150px;
+  grid-auto-columns: minmax(auto, 1fr);
   align-items: center;
   grid-template-areas: ${({ imgStart }) =>
-    imgStart ? "col2 col1" : "col1 col2"};
+    imgStart ? `"col2 col1"` : `"col1 col2"`};
 
   @media screen and (max-width: 768px) {
-    grid-template-areas: ${({ imgStart }) =>
-      imgStart ? "col1 col2" : `"col1 col1" "col2 col2"`};
+    grid-template-areas: "col1 col1" "col2 col2";
+    gap: 10px;
+
+    /* grid-template-areas: ${({ imgStart }) =>
+      imgStart ? `"col1 col2"` : `"col1 col1" "col2 col2"`}; */
   }
 `
 export const Column1 = styled.div`
@@ -74,7 +82,8 @@ export const Subtitle = styled.p`
   margin-bottom: 35px;
   font-size: 18px;
   line-height: 24px;
-  color: ${({ darkText }) => (darkText ? "#010606" : "#fff")};
+  font-weight: 500;
+  color: ${({ darkText }) => (darkText ? "#222" : "#fff")};
 `
 export const BtnWrap = styled.div`
   display: flex;
@@ -86,8 +95,29 @@ export const ImgWrap = styled.div`
   height: 100%;
 `
 
-export const Img = styled.div`
+export const Img = styled.img`
   width: 100%;
   height: 0 0 10px 0;
   padding-right: 0;
+  border-radius: 20px;
 `
+// export const Button = styled(Link)`
+//   border-radius: 50px;
+//   background: ${({ primary }) => (primary ? "#01BF71" : "#010606")};
+//   white-space: nowrap;
+//   padding: ${({ big }) => (big ? "14px  48px" : "#fff")};
+//   color: ${({ dark }) => (dark ? "#010606" : "#fff")};
+//   font-size: ${({ fontBig }) => (fontBig ? "20px" : "16px")};
+//   outline: none;
+//   border: none;
+//   cursor: pointer;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   transition: all 0.2s ease-in-out;
+
+//   &:hover {
+//     transition: all 0.2s ease-in-out;
+//     background: ${({ primary }) => (primary ? "#fff" : "#01BF71")};
+//   }
+// `

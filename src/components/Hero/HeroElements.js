@@ -7,10 +7,21 @@ export const HeroContainer = styled.div`
   justify-content: center;
   align-items: center;
   padding: 0 30px;
-  height: 900px;
+  height: 800px;
   position: relative;
   z-index: 1;
 
+  /* @media screen and (max-width: 1000px) {
+    height: 800px;
+  } */
+
+  @media screen and (max-width: 480px) {
+    height: 700px;
+  }
+
+  @media screen and (min-width: 1700px) {
+    height: 1100px;
+  }
   /* Add :before styles */
 
   :before {
