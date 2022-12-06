@@ -1,7 +1,7 @@
 import React from "react"
-import Icon1 from "../../images/img-1.png"
-import Icon2 from "../../images/img-2.png"
-import Icon3 from "../../images/img-3.png"
+import Icon5 from "../../images/img-5.png"
+import Icon6 from "../../images/img-6.png"
+import Icon4 from "../../images/img-4.png"
 import {
   ServicesCard,
   ServicesContainer,
@@ -17,7 +17,7 @@ const Services = () => {
       <ServicesH1>Hizmetlerimiz</ServicesH1>
       <ServicesWrapper>
         <ServicesCard>
-          <ServicesIcon src={Icon1} />
+          <ServicesIcon src={Icon5} />
           <ServicesH2>Veri Analizi</ServicesH2>
           <ServicesP>
             Verilerinizi kullanarak müşterilerinizi tanıyın. Hizmet kalitenizi
@@ -25,19 +25,18 @@ const Services = () => {
           </ServicesP>
         </ServicesCard>
         <ServicesCard>
-          <ServicesIcon src={Icon2} />
-          <ServicesH2>Veri Analizi</ServicesH2>
+          <ServicesIcon src={Icon6} />
+          <ServicesH2>Yazılım</ServicesH2>
           <ServicesP>
-            Verilerinizi kullanarak müşterilerinizi tanıyın. Hizmet kalitenizi
-            ve satışlarınızı arttırın.
+            Şirket içi uygulamalarınız birbiriyle konuşsun istemez misiniz?
           </ServicesP>
         </ServicesCard>
         <ServicesCard>
-          <ServicesIcon src={Icon3} />
-          <ServicesH2>Veri Analizi</ServicesH2>
+          <ServicesIcon src={Icon4} />
+          <ServicesH2>Siber Güvenlik</ServicesH2>
           <ServicesP>
-            Verilerinizi kullanarak müşterilerinizi tanıyın. Hizmet kalitenizi
-            ve satışlarınızı arttırın.
+            Verileriniz şirketinizin en kıymetli hazinesidir. Her türlü
+            senaryoya karşı onları korumak ve yedeğini tutmak gerekir.
           </ServicesP>
         </ServicesCard>
       </ServicesWrapper>

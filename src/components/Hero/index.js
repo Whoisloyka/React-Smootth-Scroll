@@ -26,10 +26,10 @@ const HeroSection = () => {
           <VideoBg autoPlay loop muted src={Video} type='video/mp4' />
         </HeroBg>
         <HeroContent>
-          <HeroH1>Kurumsal Teknoloji Bizim İşimiz</HeroH1>
+          <HeroH1>Kurumsal Teknoloji </HeroH1>
           <HeroP>
-            Otomotiv yedek parça sektöründe öncü olacak bir yazılım girişimi
-            Aşin Teknoloji.
+            Otomotiv yedek parça sektöründe öncü olacak yazılım girişimi Aşin
+            Teknoloji.
           </HeroP>
           <HeroBtnWrapper>
             <Button
