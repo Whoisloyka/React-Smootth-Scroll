@@ -1,4 +1,5 @@
 import React from "react"
+import { BsFacebook, BsInstagram, BsLinkedin } from "react-icons/bs"
 import {
   FooterContainer,
   FooterLink,
@@ -16,38 +17,29 @@ const Footer = () => {
         <FooterLinksContainer>
           <FooterLinksWrapper>
             <FooterLinkItems>
-              <FooterLinkTitle>Hakkımızda</FooterLinkTitle>
-              <FooterLink to=''>Hakkımızda</FooterLink>
-              <FooterLink to=''>Hakkımızda</FooterLink>
-              <FooterLink to=''>Hakkımızda</FooterLink>
-              <FooterLink to=''>Hakkımızda</FooterLink>
-              <FooterLink to=''>Hakkımızda</FooterLink>
+              <FooterLinkTitle>KVKK</FooterLinkTitle>
+              <FooterLink to='/Covid19'>
+                Covid 19 Bilgilendirme Metni
+              </FooterLink>
+              <FooterLink to='/CookiePolicy'>Çerez Politikası</FooterLink>
+              <FooterLink to='/GenaralClarification'>
+                Genel Aydınlatma Metni
+              </FooterLink>
             </FooterLinkItems>
             <FooterLinkItems>
               <FooterLinkTitle>Sosyal Medya</FooterLinkTitle>
-              <FooterLink to=''>Linkedin</FooterLink>
-              <FooterLink to=''>Instagram</FooterLink>
-              <FooterLink to=''>Facebook</FooterLink>
-              <FooterLink to=''>Hakkımızda</FooterLink>
-              <FooterLink to=''>Hakkımızda</FooterLink>
-            </FooterLinkItems>
-          </FooterLinksWrapper>
-          <FooterLinksWrapper>
-            <FooterLinkItems>
-              <FooterLinkTitle>Hakkımızda</FooterLinkTitle>
-              <FooterLink to=''>Hakkımızda</FooterLink>
-              <FooterLink to=''>Hakkımızda</FooterLink>
-              <FooterLink to=''>Hakkımızda</FooterLink>
-              <FooterLink to=''>Hakkımızda</FooterLink>
-              <FooterLink to=''>Hakkımızda</FooterLink>
-            </FooterLinkItems>
-            <FooterLinkItems>
-              <FooterLinkTitle>Hakkımızda</FooterLinkTitle>
-              <FooterLink to=''>Hakkımızda</FooterLink>
-              <FooterLink to=''>Hakkımızda</FooterLink>
-              <FooterLink to=''>Hakkımızda</FooterLink>
-              <FooterLink to=''>Hakkımızda</FooterLink>
-              <FooterLink to=''>Hakkımızda</FooterLink>
+              <FooterLink to=''>
+                <BsLinkedin />
+                Linkedin
+              </FooterLink>
+              <FooterLink to=''>
+                <BsInstagram />
+                Instagram
+              </FooterLink>
+              <FooterLink to=''>
+                <BsFacebook />
+                Facebook
+              </FooterLink>
             </FooterLinkItems>
           </FooterLinksWrapper>
         </FooterLinksContainer>
