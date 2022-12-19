@@ -8,6 +8,8 @@ import {
   FooterLinksWrapper,
   FooterWrap,
   FooterLinksContainer,
+  FooterBottom,
+  FooterBottomText,
 } from "./FooterElements"
 
 const Footer = () => {
@@ -29,20 +31,39 @@ const Footer = () => {
             <FooterLinkItems>
               <FooterLinkTitle>Sosyal Medya</FooterLinkTitle>
               <FooterLink to=''>
-                <BsLinkedin />
-                Linkedin
+                <span>
+                  <BsLinkedin />
+                  &nbsp; Linkedin
+                </span>
               </FooterLink>
               <FooterLink to=''>
-                <BsInstagram />
-                Instagram
+                <span>
+                  <BsInstagram />
+                  &nbsp; Instagram
+                </span>
               </FooterLink>
               <FooterLink to=''>
-                <BsFacebook />
-                Facebook
+                <span>
+                  <BsFacebook />
+                  &nbsp;Facebook
+                </span>
               </FooterLink>
             </FooterLinkItems>
           </FooterLinksWrapper>
         </FooterLinksContainer>
+        <FooterBottom>
+          <hr
+            style={{
+              color: "white",
+              backgroundColor: "white",
+              width: "100%",
+              height: "1px",
+            }}
+          />
+          <FooterBottomText>
+            Aşin Teknoloji 2022 Tüm Hakları Saklıdır.
+          </FooterBottomText>
+        </FooterBottom>
       </FooterWrap>
     </FooterContainer>
   )
