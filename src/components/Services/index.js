@@ -36,7 +36,7 @@ const Services = () => {
           <ServicesH2>Siber Güvenlik</ServicesH2>
           <ServicesP>
             Verileriniz şirketinizin en kıymetli hazinesidir. Her türlü
-            senaryoya karşı onları korumak ve yedeğini tutmak gerekir.
+            senaryoya karşı onları korumak gerekir.
           </ServicesP>
         </ServicesCard>
       </ServicesWrapper>
